@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata and title for the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sony | Store</title>
+    <!-- Link to external CSS stylesheet -->
+    <link href="css/styles.css" rel="stylesheet"/>
+    <!-- Favicon for the website -->
+    <link rel="shortcut icon" href="images/Sony-Logo-1958.png" type="image/x-icon" />
+    <!-- Validate the HTML at https://validator.w3.org/ -->
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>Become a Walkman Today!</h1>
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="buy.html">Shop</a></li>
+                <li><a href="slide_show.html">Slide Show</a></li>
+                <li><a href="spec.html">Specifications</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main content -->
+    <main>
+        <!-- Product container 1 -->
+        <div class="product-container">
+            <h2>Walkman TPS-L2</h2>
+            <img src="images/walkman1.jpg" alt="Reference#1 Sony Walkman">
+            <p style="text-align: justify; padding: 0px 40px 0px 40px;">The <b>AMAZING!</b> and <b>NEW!!</b> Walkman that makes it easy to bring all your favorite bands with you, eveywhere you go!!</p>
+            <br><p class="price">For $200.00 only!</p>
+            <button class="buy-button" style="margin: 20px;" type="button" onclick="buybutton()">Buy Now !</button>
+        </div>
+        <!-- Product container 2 -->
+        <div class="product-container">
+            <h2>Walkman TPS-Sport</h2>
+            <img src="images/walkman2.jpg" alt="Reference#2 Sony Walkman">
+            <p style="text-align: justify; padding: 0px 40px 0px 40px; margin-top: 33px">The <b>AWESOME!</b> and <b>COOL!!</b> Walkman that makes it easy to bring favorite music to your exercise sessions!!</p>
+            <br><p class="price">For $225.00 only!</p>
+            <button class="buy-button" style="margin: 20px;" type="button" onclick="buybutton()">Buy Now !</button>
+        </div>
+        <!-- Product container 3 -->
+        <div class="product-container">
+            <h2>Walkman TPS-Delux</h2>
+            <img src="images/walkman4.jpg" alt="Reference#4 Sony Walkman">
+            <p style="text-align: justify; padding: 0px 40px 0px 40px; margin-top: 33px">The <b>ELEGANT!</b> and <b>POMPOUS!!</b> Walkman that makes it easy to bring your <b>tastiest</b> music with you, eveywhere you go!!</p>
+            <br><p class="price">For $300.00</p>
+            <button class="buy-button" style="margin: 20px;" type="button" onclick="buybutton()">Buy Now !</button>
+        </div>
+    </main>
+    <!-- JS for button -->
+    <script>
+        function buybutton() {
+            // Simulate form submission here if needed
+            
+            // Redirect to another page after submitting feedback
+            window.location.href = "thank-you.html"; 
+        }
+    </script>
+
+    <!-- Footer section -->
+    <footer>
+        <p><img src="images/Sony-Logo-1957.png" alt="sony logo" heigh="108" width="192"></p>
+        <!-- Navigation links in the footer -->
+        <nav>
+            <a href="/privacy-policy.html" title="Read our Privacy Policy">Privacy Policy</a> | <a href="/Support.html" title="Contact Support">Support</a> 
+        </nav>
+        <p>© 2023 SONY OF CANADA LTD</p>
+    </footer>
+</body>
+
+<style>
+/* Styling for various page elements */
+.container {
+    max-width: 1000px;
+    margin: 20px;
+    padding: 50px;
+    background-color: lightyellow;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-container {
+    background-color: lightyellow;
+    color: rgb(165, 42, 42, 0.8);
+    text-align: center;
+    width: 350px;
+    height: auto;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+    /* border: solid red 2px; */
+}
+
+.product-container h2 {
+    margin-top: 10px;
+}
+
+.product-container img {
+    width: 95%;
+    height: 95%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    /* border: solid red 2px; */
+}
+
+.buy-button {
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: rgb(165, 42, 42, 0.8);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.buy-button:hover {
+    color: rgb(165, 42, 42, 0.8);
+    background-color: white;
+}
+</style>
+</html>

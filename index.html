@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Sony Walkman Promotion Website</title> <!-- Title of the website -->
+    <link rel="shortcut icon" href="images/Sony-Logo-1958.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sony Walkman</h1>
+         <nav> <!--Navigation between pages -->
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="buy.html">Shop</a></li>
+                <li><a href="slide_show.html">Slide Show</a></li>
+                <li><a href="spec.html">Specifications</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <div class="container"> 
+        <article>
+            <div class="content">
+           <h1 class="title222">The NEW! Sony Walkman</h1> <!-- Title for the paragraph-->
+            <p>Sony has long been famous for reducing size and increasing performance. This time we have outdone ourselves. The Walkman produces such a big, rich sound it can only be compared to a very elaborate and expensive component stereo system. Yet, it's so small you can take it anywhere you go.</p>
+            <p>There is really no way to convey the remarkable sound quality of this little machine. You've got to hear it.</p>
+            <p>If you are like most people, when you put on the incredibly efficient headphones, you will shake your head in amazement and then ask, "How can I get one?"</p>
+            <p>And there has never been a better way to make bike riding, roller-skating, skiing or just taking a walk more fun. Because there's no easier way to take your music along for the ride.</p>
+            <p>The Walkman comes with featherweight (1.4 oz.) stereo headphones, carrying case, and an extra jack for a second set of headphones. And an exclusive hot-line button that lets you carry on a conversation or sing along over the music.</p>
+            <p>Stop by a Sony dealer and hear one for yourself. Your eyes won't believe your ears. Because nothing this small ever sounded this big.</p>
+            </div>
+            <div class="image">
+            <img src="images/sony-walkman-skate-box-b edited.jpg" alt="sony logo">
+            </div>
+        </article>
+    </div>
+    <div class="feedback-section"> <!-- Feedback section -->
+        <h2>We'd Love Your Feedback</h2>
+        <p>Your thoughts about the new Sony Walkman matter to us. Please share!</p>
+        <form onsubmit="displayThankYouMessage(event)">
+            <div class="feedback-row">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+            </div>
+            <div class="feedback-row">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Sony@example.com" required>
+            </div>
+            <div class="feedback-row">
+                <label for="feedback">Your Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Share your thoughts..."></textarea>
+            </div>
+            <div class="feedback-button">
+                <button type="submit">Submit Feedback</button>
+            </div>
+        </form>
+    </div>
+    <!-- JS for button -->
+    <script type="text/javascript">
+        function displayThankYouMessage(event) {
+            event.preventDefault(); // prevent form from submitting
+    
+            // Save original content of feedback section to revert to it later
+            var originalFeedbackContent = document.querySelector(".feedback-section").innerHTML;
+    
+            // Replace the feedback form with the thank you message
+            document.querySelector(".feedback-section").innerHTML = "<h2>Thank you for your feedback!</h2>";
+    
+            // Set a timer to revert back to the original feedback form after 3 seconds (3000 milliseconds)
+            setTimeout(function() {
+                document.querySelector(".feedback-section").innerHTML = originalFeedbackContent;
+            }, 3000);
+        }
+        </script>
+
+    </main>
+    <footer> <!--Footer image and links to privacy policy and support -->
+        <p><img src="images/Sony-Logo-1957.png" alt="sony logo" heigh="108" width="192"></p>
+        <nav>
+            <a href="/privacy-policy.html" title="Read our Privacy Policy">Privacy Policy</a> | <a href="/Support.html" title="Contact Support">Support</a> 
+        </nav>
+        <p>© 2023 SONY OF CANADA LTD</p>
+    </footer>
+</body>
+<style>  
+ /* Internal css starts */
+    .container {
+        overflow: hidden; 
+    }
+
+    .content {
+        float: right;     
+        width: 40%;      
+        box-sizing: border-box; 
+        padding: 0 15px;  
+    }
+
+    .image {
+        float: left;      
+        width: 50%;      
+        box-sizing: border-box; 
+        padding: 0;
+        text-align: center; /
+    }
+
+  
+    article:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .feedback-section {
+    margin: 16px 30%;
+    border: 1px solid #dcdcdc;
+    padding: 20px;
+    border-radius: 8px;
+    background-color:lightyellow;
+    max-width: auto; 
+    box-sizing: border-box; 
+}
+
+.feedback-row {
+    margin-bottom: 15px;
+}
+
+.feedback-button {
+    margin-bottom: 15px;
+    float: right;
+}
+
+div label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 60%;
+    max-width: 100%; 
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box; 
+}
+
+textarea {
+    width: 100%;
+}
+
+button {
+    padding: 10px 15px;
+    background-color:rgb(165, 42, 42,0.8);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    color:rgb(165, 42, 42,0.8);
+    background-color: white;
+}
+.title222 {
+    color:rgb(165, 42, 42,0.8);
+    text-align: center;
+}
+</style>
+</html>

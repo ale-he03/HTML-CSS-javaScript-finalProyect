@@ -1,0 +1,103 @@
+/* Set default font for all elements */
+* {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body styles */
+body {
+    margin: 0;
+    /* Background gradient */
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    color: #333;
+    height: auto;
+    overflow: auto;
+}
+
+/* Header styles */
+header {
+    background-color: rgb(245, 222, 179);
+    color: rgb(165, 42, 42, 0.8);
+    padding: 1px 0px 5px 0px;
+    text-align: center;
+    /* Sticky header */
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+/* Navigation menu styles */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: brown;
+    padding: 10px 15px;
+    border-radius: 5px;
+    /* Transition effects for link */
+    transition: background-color 1s, color 1s;
+}
+
+nav ul li a:hover {
+    background-color: lightyellow;
+    color: black;
+}
+
+/* Main content styles */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+/* Container styles */
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 50px;
+    background-color: lightyellow;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styles */
+footer {
+    background-color: rgb(245, 222, 179);
+    color: rgb(165, 42, 42, 0.8);
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    /* Stick to the bottom */
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Footer paragraph styles */
+footer p {
+    margin: 5px;
+}
+
+/* Footer image styles */
+footer img {
+    margin: 5px;
+}
+
+/* Hover effect for footer elements */
+footer :hover{
+    color: rgb(165, 42, 42, 0.8);
+}

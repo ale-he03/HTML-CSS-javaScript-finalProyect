@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/Sony-Logo-1958.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>About Walkman and Music</title>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>About Us</h1>
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="buy.html">Shop</a></li>
+                <li><a href="slide_show.html">Slide Show</a></li>
+                <li><a href="spec.html">Specifications</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <!--<p>Exploring the nostalgic world of portable music players.</p>-->
+    </header>
+    
+    <!-- Main content -->
+    <main>
+        <!-- Contact details -->
+        <p>Contact Us: <span class="company-name">Sony Corporation</span></p>
+        <p>General Inquiries: <span class="phone-number">1-800-SONY-INFO</span></p>
+        <p>Sales: <span class="phone-number">1-888-SONY-SALE</span></p>
+        <p>Customer Support: <span class="phone-number">1-866-SONY-SUPP</span></p>
+        
+        <!-- Container for company sections -->
+        <div class="container">
+            <!-- Join Our Team section -->
+            <section class="company-section">
+                <h1>Join Our Team!</h1>
+                <p>If you are passionate about music technology and want to contribute to the future of audio innovation, consider joining our team at Sony.</p>
+                <p>Explore exciting career opportunities and become part of a company dedicated to shaping the way people experience music and technology.</p>
+            </section> 
+            
+            <!-- Interested in Working section -->
+            <section class="company-section">
+                <h2>Interested in Working with Us?</h2>
+                <p>If you're interested in working with The New Sony Walkman and contributing to our mission, please provide your contact information below:</p>
+            
+            <div id="contact-form">
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                    <button type="button" onclick="submitForm()">Submit</button>
+                </form>
+            </div>
+
+                <div id="thank-you-message" style="display: none;">
+                    <p>Thank you for your message!, We will get back with you soon!</p>
+                </div>
+            </section>
+        </div>
+        <!-- JS for button -->
+        <script>
+            function submitForm() {
+                var form = document.getElementById("contact-form");
+                var thankYouMessage = document.getElementById("thank-you-message");
+                
+                form.style.display = "none"; // Hide the form
+                thankYouMessage.style.display = "block"; // Show the thank you message
+    
+                // Reset the form after a certain delay
+                setTimeout(function() {
+                    form.style.display = "block"; // Show the form again
+                    thankYouMessage.style.display = "none"; // Hide the thank you message
+                }, 5000); // Display form after 5 seconds
+            }
+        </script>
+        
+        <!-- More company-related sections -->
+        <div class="container">
+            <!-- Current Job Openings section -->
+            <section>
+                <h1>Current Job Openings</h1>
+                <p>We're looking for talented individuals who are passionate about music technology and innovation to join our team. Explore our current job openings and apply today:</p>
+                <ul>
+                    <li>
+                        <h2>Software Engineer</h2>
+                        <p>We're seeking an experienced software engineer to contribute to the development of our cutting-edge music playback technology. Learn more and apply <a href="https://ca.indeed.com/q-sony-software-engineer-jobs.html?vjk=0b8167187a3bc05e">here</a>.</p>
+                    </li>
+                    <li>
+                        <h2>Product Designer</h2>
+                        <p>If you have a knack for designing intuitive and visually appealing user interfaces, consider joining us as a product designer. Learn more and apply <a href="https://www.entertainmentcareers.net/sony-music/product-designer/job/276886/">here</a>.</p>
+                    </li>
+                    <!-- Add more job listings here -->
+                </ul>
+            </section>
+            
+            <!-- Why Work with Us section -->
+            <section>
+                <h1>Why Work with Us?</h1>
+                <p>At The New Sony Walkman, we're dedicated to pushing the boundaries of music technology. Joining our team means being part of a passionate and innovative community that's shaping the future of audio experiences.</p>
+                <p>We offer competitive compensation, flexible work arrangements, and opportunities for career growth and professional development.</p>
+            </section>
+        </div>
+        
+        <!-- Our Mission section -->
+        <div class="container">
+            <h1>Our Mission</h1>
+            <p>At Walkman Vibes, we're dedicated to celebrating the era of Walkman and the power of music. We curate content, share stories, and bring together enthusiasts who share a passion for this iconic device and the melodies it carried.</p>
+        </div>
+        
+        <!-- Our Team Members section -->
+        <div class="container">
+            <h2>OUR TEAM MEMBERS</h2>
+            <p><b>HEAD DEV:</b> André Anu B. Martins</p>
+            <p><b>HEAD HR:</b> Alejandra Hernandez</p>
+            <p><b>HEAD Engineer:</b> Hidetoshi Okada</p>
+            <p><b>HEAD Designer:</b> Sinan Kahraman</p>
+            <p><b>INTERN:</b> Harshita Kashyap</p>
+        </div>
+    </main>
+    
+    <!-- Footer section -->
+    <footer>
+        <p><img src="images/Sony-Logo-1957.png" alt="sony logo" heigh="108" width="192"></p>
+        <!-- Navigation links in the footer -->
+        <nav>
+            <a href="/privacy-policy.html" title="Read our Privacy Policy">Privacy Policy</a> | <a href="/Support.html" title="Contact Support">Support</a> 
+        </nav>
+        <p>© 2023 SONY OF CANADA LTD</p>
+    </footer>
+</body>
+<style>
+
+    button {
+        font-weight: bold;
+        padding: 10px 20px;
+        font-size: 20px;
+        background-color: rgb(165, 42, 42, 0.8);
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+    button:hover {
+        color: rgb(165, 42, 42, 0.8);
+        background-color: white;
+    }
+
+    h1, h3 {
+        text-align: center;
+    }
+
+    #thank-you-message {
+            display: none;
+            font-size: 24px; /* Set the font size */
+            font-weight: bold; /* Make the text bold */
+    }
+</style>
+</html>
+

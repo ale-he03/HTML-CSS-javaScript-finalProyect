@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Show</title>
+    <meta name="author" content="Hidetoshi Okada">
+    <meta name="description" content="Slide Show">
+    <link rel="shortcut icon" href="images/Sony-Logo-1958.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>Walkman Quick View</h1>
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="buy.html">Shop</a></li>
+                <li><a href="slide_show.html">Slide Show</a></li>
+                <li><a href="spec.html">Specifications</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Main content -->
+    <div class="container">
+        <h3>SONY Products</h3>
+
+        <!-- Slide show container -->
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img src="images/sony.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="images/walkman1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="images/walkman2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="images/walkman3.jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮ Previous</a>
+            <a class="next" onclick="plusSlides(1)">Next ❯</a>
+        </div>
+    </div>
+    
+    <!-- Footer section -->
+    <footer>
+        <p><img src="images/Sony-Logo-1957.png" alt="sony logo" heigh="108" width="192"></p>
+        <!-- Navigation links in the footer -->
+        <nav>
+            <a href="/privacy-policy.html" title="Read our Privacy Policy">Privacy Policy</a> | <a href="/Support.html" title="Contact Support">Support</a>
+        </nav>
+        <p>© 2023 SONY OF CANADA LTD</p>
+    </footer>
+
+    <!-- JavaScript for the slide show -->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+
+            if (n > slides.length) {
+                slideIndex = 1;
+            } else if (n < 1) {
+                slideIndex = slides.length;
+            }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+</body>
+<style>
+  /* Slide show styles */
+  h3 {
+      font-size: 32px;
+      text-align: center;
+      color: rgb(165, 42, 42, 0.8);
+  }
+
+  .slideshow-container {
+      max-width: 700px;
+      position: relative;
+      margin: auto;
+      margin-bottom: 50px;
+  }
+
+  .mySlides {
+      display: none;
+      width: 100%;
+  }
+
+  .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 24px;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: background-color 0.6s ease;
+        border-radius: 50%;
+        opacity: 0.8;
+    }
+
+  .next {
+        right: -30px;
+  }
+
+  .prev {
+        left: -30px;
+    }
+    
+  .prev:hover, .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Container styles */
+  .container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 10px;
+      background-color: lightyellow;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+</style>
+</html>
